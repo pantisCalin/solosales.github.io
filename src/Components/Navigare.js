@@ -16,8 +16,12 @@ const Navigare = () => {
         Meniu
       </button>
       <div className={`ButtonsNavDiv ${downMenu ? "extendMenu" : ""}`}>
-        <Link className="LinkTag" onClick={() => setDownMenu(false)} to="/">
-          <AiTwotoneHome to={`${process.env.PUBLIC_URL}/`} />
+        <Link
+          to={`${process.env.PUBLIC_URL}/`}
+          className="LinkTag"
+          onClick={() => setDownMenu(false)}
+        >
+          <AiTwotoneHome />
           Acasă
         </Link>
         <Link
