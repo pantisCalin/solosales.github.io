@@ -21,14 +21,14 @@ const Home = ({
         />
 
         <div className="underButtonsHome">
-          <Link className="HomeButton" to="/produse">
+          <Link className="HomeButton" to={`${process.env.PUBLIC_URL}/produse`}>
             Vezi toate produsele
           </Link>
           <Link
             name="sudura"
             onClick={sortByCategory}
             className="HomeButton"
-            to="/produse"
+            to={`${process.env.PUBLIC_URL}/produse`}
           >
             Sudură
           </Link>
@@ -36,7 +36,7 @@ const Home = ({
             name="accesorii"
             onClick={sortByCategory}
             className="HomeButton"
-            to="/produse"
+            to={`${process.env.PUBLIC_URL}/produse`}
           >
             Accesorii
           </Link>
@@ -44,7 +44,7 @@ const Home = ({
             name="scule"
             onClick={sortByCategory}
             className="HomeButton"
-            to="/produse"
+            to={`${process.env.PUBLIC_URL}/produse`}
           >
             Consumabile
           </Link>

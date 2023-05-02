@@ -97,7 +97,7 @@ function App() {
   };
   const showResults = (e) => {
     if (e.key === "Enter") {
-      navigate("/produse");
+      navigate(`${process.env.PUBLIC_URL}/produse`);
     }
   };
   const addToList = (certainProduct, quantity) => {
