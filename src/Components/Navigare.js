@@ -17,27 +17,27 @@ const Navigare = () => {
       </button>
       <div className={`ButtonsNavDiv ${downMenu ? "extendMenu" : ""}`}>
         <Link className="LinkTag" onClick={() => setDownMenu(false)} to="/">
-          <AiTwotoneHome />
+          <AiTwotoneHome to={`${process.env.PUBLIC_URL}/`} />
           Acasă
         </Link>
         <Link
           className="LinkTag"
           onClick={() => setDownMenu(false)}
-          to="/produse"
+          to={`${process.env.PUBLIC_URL}/produse`}
         >
           <MdProductionQuantityLimits /> Produse
         </Link>
         <Link
           className="LinkTag"
           onClick={() => setDownMenu(false)}
-          to="/contact"
+          to={`${process.env.PUBLIC_URL}/contact`}
         >
           <AiFillPhone /> Contact
         </Link>
         <Link
           className="LinkTag"
           onClick={() => setDownMenu(false)}
-          to="/lista"
+          to={`${process.env.PUBLIC_URL}/lista`}
         >
           <BsCardList /> Lista
         </Link>

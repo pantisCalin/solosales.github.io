@@ -46,7 +46,7 @@ const Lista = ({ savedItems, totalPrice }) => {
                 {" "}
                 <img
                   className="imagineCarucior"
-                  src={savedItem.product.imagine}
+                  src={`${process.env.PUBLIC_URL}/${savedItem.product.imagine}`}
                 />
               </td>
               <td>

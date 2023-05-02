@@ -63,7 +63,7 @@ const Produs = ({ allProducts, fetchTheData, addToList }) => {
             )}
           </div>
           <NavLink
-            to="/lista"
+            to={`${process.env.PUBLIC_URL}/lista`}
             className="addBut"
             onClick={() => addToList(certainProduct, quantity)}
           >

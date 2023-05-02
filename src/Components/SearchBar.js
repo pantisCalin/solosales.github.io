@@ -50,7 +50,9 @@ const SearchBar = ({
           {didHeFocused &&
             filteredProducts.map((product, index) => (
               <NavLink
-                to={`/produse/${product.denumire.replace("/", "theSlash")}`}
+                to={`${
+                  process.env.PUBLIC_URL
+                }/produse/${product.denumire.replace("/", "theSlash")}`}
                 key={product.cod}
                 className="optionList"
               >

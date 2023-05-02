@@ -129,7 +129,7 @@ function App() {
       <Routes>
         <Route
           exact
-          path="/"
+          path={`${process.env.PUBLIC_URL}/`}
           element={
             <Home
               sortByCategory={sortByCategory}
@@ -141,7 +141,7 @@ function App() {
         />
         <Route
           exact
-          path="/produse"
+          path={`${process.env.PUBLIC_URL}/produse`}
           element={
             <Produse
               filterOptions={filterOptions}
@@ -150,10 +150,14 @@ function App() {
             />
           }
         />
-        <Route exact path="/contact" element={<Contact />} />
         <Route
           exact
-          path="/produse/:denumire"
+          path={`${process.env.PUBLIC_URL}/contact`}
+          element={<Contact />}
+        />
+        <Route
+          exact
+          path={`${process.env.PUBLIC_URL}/produse/:denumire`}
           element={
             <Produs
               allProducts={allProducts}
@@ -164,7 +168,7 @@ function App() {
         />
         <Route
           exact
-          path="/lista"
+          path={`${process.env.PUBLIC_URL}/lista`}
           element={<Lista totalPrice={totalPrice} savedItems={savedItems} />}
         />
       </Routes>
